@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Jonathan's Portfolio Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+
+    <div class="logo">
+      <img src="images/logos.jpg" alt="logo" class="logo_image">
+    </div>
+
+    <div class="name_and_position">
+      <h1>JONATHAN GOMEZ</h1>
+      <h3>FRONT-END DEVELOPER</h3>
+    </div>
+
+  </header>
+
+  <!-- insert line break -->
+  <hr>
+
+  <div class="profile_and_content">
+    <div class="profile">
+      <div class="profile_picture_and_about_me_sections">
+        <!-- insert profile picture -->
+        <img src="images/placeholder.jpg" alt="profile picture" class="profile_picture">
+        <!-- about me section -->
+        <div class="about_me_section">
+          <p>
+            <span>
+              About Me:
+            </span>
+            (write about me section)
+            I feel energized and excited knowing that I can create things for people to interact with.
+          </p>
+        </div>
+      </div>
+      <!-- insert skills as images-->
+      <div class="skills_section">
+        <p>Skills:</p>
+        <div class="skills_listed">
+          <img src="images/html.png" alt="html logo">
+          <img src="images/css.png" alt="css logo">
+          <img src="images/js.png" alt="javascript logo">
+          <img src="images/python.png" alt="python logo">
+        </div>
+      </div>
+    </div>
+
+    <div class="main_content">
+      <!-- insert cool looking code -->
+      <img src="images/bigcode.png" alt="image of code" class="main_image">
+
+      <div class="featured_work">
+        <h2>Featured Work</h2>
+        <div class="list_of_projects">
+          <div class="project_1">
+            <!-- insert photo -->
+            <img src="images/mockup.png" alt="mockup project image" class="mockup" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html');">
+            <!-- insert name -->
+            <p>Mockup Project</p>
+            <!-- insert URL -->
+            <button type="button" name="mockup project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html')">See Project</button>
+          </div>
+
+          <div class="project_2">
+            <!-- insert photo -->
+            <img src="images/hammerhead.jpg" alt="image of hammerhead shark" class="hammerhead" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html');">
+            <!-- insert name -->
+            <p>Animal Trading Card</p>
+            <!-- insert URL -->
+            <button type="button" name="trading card project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html')">See Project</button>
+          </div>
+
+          <div class="project_3">
+            <!-- insert photo -->
+            <img src="images/pixel.png" alt="image of pixel art maker" class="pixel_art_maker" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html');">
+            <!-- insert name -->
+            <p>Pixel-Art-Maker</p>
+            <!-- insert URL -->
+            <button type="button" name="pixel art maker project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html')">See Project</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- insert line break -->
+    <hr>
+    <!-- insert social media -->
+    <div class="social_media">
+      <img src="images/linkedin.png" alt="linked in link" class="linkedin" onclick="Goto('https://www.linkedin.com/in/jonathangomeze/');">
+      <img src="images/github.png" alt="github link" class="github" onclick="Goto('https://github.com/gomezjonathan46');">
+      <img src="images/twitter.png" alt="twitter link" class="twitter" onclick="Goto('https://twitter.com/Jonatha99246755');">
+    </div>
+
+    <p>Designed by Jonathan Gomez || 2018</p>
+
+  </footer>
+  <script>
+    function Goto(Location){
+      location.href=Location;
+    }
+  </script>
+</body>
+
+</html>
