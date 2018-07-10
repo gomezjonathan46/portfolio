@@ -99,7 +99,7 @@ footer > hr {
 }
 
 .profile_and_content {
-  display: grid; 
+  display: grid;
 }
 
 .profile {
@@ -196,7 +196,7 @@ footer > hr {
   }
 }
 
-@media screen and (min-width: 660px) /*and (max-width: 760px)*/ {
+@media screen and (min-width: 660px) {
   .list_of_projects {
     display: grid;
     justify-content: center;
@@ -204,6 +204,11 @@ footer > hr {
 
   .profile {
     width: 200px;
+  }
+
+  .profile_and_content {
+    display: grid;
+    grid-template-columns: 215px auto;
   }
 
   .profile_picture {
@@ -265,10 +270,6 @@ footer > hr {
   .project_3 {
     grid-column: 3;
     grid-row: 1;
-  }
-
-  .profile {
-    width: 200px;
   }
 
   .profile_picture {
