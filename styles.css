@@ -50,7 +50,7 @@ h2 {
   color: #2d3c49;
 }
 
-.social_media > img {
+.social_media > a > img {
   width: 50px;
   height: 50px;
   padding-bottom: 10px;
@@ -71,18 +71,21 @@ footer > p {
   padding-right: 5px;
 }
 
-.project_1 > img, .project_2 > img, .project_3 > img {
+.project_1 > a > img, .project_2 > a > img, .project_3 > a > img {
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
 
-button {
+.button {
   cursor: pointer;
   min-width: 48px;
   min-height: 48px;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgba(22, 136, 216, 0.3686274509803922);
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
 }
 
 .mockup, .hammerhead, .pixel_art_maker {

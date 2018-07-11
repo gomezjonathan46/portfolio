@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
     <div class="profile">
       <div class="profile_picture_and_about_me_sections">
         <!-- insert profile picture -->
-        <img src="images/placeholder.jpg" alt="profile picture" class="profile_picture">
+        <img src="images/jg.png" alt="profile picture" class="profile_picture">
         <!-- about me section -->
         <div class="about_me_section">
           <p>
@@ -63,29 +63,35 @@
         <div class="list_of_projects">
           <div class="project_1">
             <!-- insert photo -->
-            <img src="images/mockup.png" alt="mockup project image" class="mockup" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html');">
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html">
+              <img src="images/mockup.png" alt="mockup project image" class="mockup">
+            </a>
             <!-- insert name -->
             <p>Mockup Project</p>
             <!-- insert URL -->
-            <button type="button" name="mockup project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html')">See Project</button>
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Mockup/blob/master/mockup-to-article/index.html" class="button">See Project</a>
           </div>
 
           <div class="project_2">
             <!-- insert photo -->
-            <img src="images/hammerhead.jpg" alt="image of hammerhead shark" class="hammerhead" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html');">
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html">
+              <img src="images/hammerhead.jpg" alt="image of hammerhead shark" class="hammerhead">
+            </a>
             <!-- insert name -->
             <p>Animal Trading Card</p>
             <!-- insert URL -->
-            <button type="button" name="trading card project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html')">See Project</button>
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Animal-Trading-Card/blob/master/fend-animal-trading-cards-master/card.html" class="button">See Project</a>
           </div>
 
           <div class="project_3">
             <!-- insert photo -->
-            <img src="images/pixel.png" alt="image of pixel art maker" class="pixel_art_maker" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html');">
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html">
+              <img src="images/pixel.png" alt="image of pixel art maker" class="pixel_art_maker">
+            </a>
             <!-- insert name -->
             <p>Pixel-Art-Maker</p>
             <!-- insert URL -->
-            <button type="button" name="pixel art maker project button" onclick="Goto('http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html')">See Project</button>
+            <a href="http://htmlpreview.github.io/?https://github.com/gomezjonathan46/Pixel-Art-Maker/blob/master/index.html" class="button">See Project</a>
           </div>
 
         </div>
@@ -98,19 +104,24 @@
     <hr>
     <!-- insert social media -->
     <div class="social_media">
-      <img src="images/linkedin.png" alt="linked in link" class="linkedin" onclick="Goto('https://www.linkedin.com/in/jonathangomeze/');">
-      <img src="images/github.png" alt="github link" class="github" onclick="Goto('https://github.com/gomezjonathan46');">
-      <img src="images/twitter.png" alt="twitter link" class="twitter" onclick="Goto('https://twitter.com/Jonatha99246755');">
+
+      <a href="https://www.linkedin.com/in/jonathangomeze/">
+        <img src="images/linkedin.png" alt="linked in link" class="linkedin">
+      </a>
+
+      <a href="https://github.com/gomezjonathan46">
+        <img src="images/github.png" alt="github link" class="github">
+      </a>
+
+      <a href="https://twitter.com/Jonatha99246755">
+        <img src="images/twitter.png" alt="twitter link" class="twitter">
+      </a>
+
     </div>
 
     <p>Designed by Jonathan Gomez || 2018</p>
 
   </footer>
-  <script>
-    function Goto(Location){
-      location.href=Location;
-    }
-  </script>
 </body>
 
 </html>
