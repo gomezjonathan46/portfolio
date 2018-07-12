@@ -181,7 +181,6 @@ footer > hr {
     grid-column: 1;
     margin-bottom: 15px;
     width: 100%;
-    height: 215px;
     display: grid;
   }
 
@@ -225,6 +224,12 @@ footer > hr {
   }
 }
 
+@media screen and (max-width: 890px) {
+  .project_2, .project_3 {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 890px) {
 
   .main_content{
@@ -243,6 +248,7 @@ footer > hr {
 
   .project_3 {
     grid-row: 3;
+    margin-top: 30px;
   }
 }
 
@@ -273,6 +279,7 @@ footer > hr {
   .project_3 {
     grid-column: 3;
     grid-row: 1;
+    margin-top: 0px;
   }
 
   .profile_picture {
