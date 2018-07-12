@@ -13,6 +13,7 @@ hr {
   margin-bottom: 20px;
 }
 
+/* groups name and position classes to style them together */
 .name_and_position {
   padding-right: 5px;
   color: #2d3c49;
@@ -27,6 +28,7 @@ hr {
   border-radius: 10px;
 }
 
+/* includes customized font from google */
 body {
   font-family: 'Encode Sans Condensed', sans-serif, verdana;
 }
@@ -101,6 +103,7 @@ footer > hr {
   margin-bottom: 10px;
 }
 
+/* creates a grid for profile information and content of website to make it responsive */
 .profile_and_content {
   display: grid;
 }
@@ -128,8 +131,10 @@ footer > hr {
   height: 160px;
 }
 
+/* groups profile picture and about me section so that they will organize themselves next to each other on mobile devices */
 .profile_picture_and_about_me_sections {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skills_section > p {
@@ -192,6 +197,10 @@ footer > hr {
     height: 75px;
   }
 
+  .profile_picture_and_about_me_sections {
+    flex-wrap: nowrap;
+  }
+
   .main_content {
     grid-row: 2;
     grid-column: 1;
@@ -208,6 +217,7 @@ footer > hr {
     width: 200px;
   }
 
+  /* sets a specific width to the first column so it will not continuously expand */
   .profile_and_content {
     display: grid;
     grid-template-columns: 215px auto;
@@ -217,10 +227,6 @@ footer > hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .profile_picture_and_about_me_sections {
-    flex-wrap: wrap;
   }
 }
 
@@ -286,9 +292,5 @@ footer > hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .profile_picture_and_about_me_sections {
-    flex-wrap: wrap;
   }
 }
