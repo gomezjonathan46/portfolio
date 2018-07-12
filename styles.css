@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
 }
 
-.logo_image {
+.logo-image {
   height: 75px;
   padding-top: 10px;
 }
@@ -14,7 +14,7 @@ hr {
 }
 
 /* groups name and position classes to style them together */
-.name_and_position {
+.name-and-position {
   padding-right: 5px;
   color: #2d3c49;
   display: flex;
@@ -22,7 +22,7 @@ hr {
   align-items: flex-end;
 }
 
-.main_image {
+.main-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -48,11 +48,11 @@ h2 {
   color: #7d97ad;
 }
 
-.project_1, .project_2, .project_3 {
+.project-1, .project-2, .project-3 {
   color: #2d3c49;
 }
 
-.social_media > a > img {
+.social-media > a > img {
   width: 50px;
   height: 50px;
   padding-bottom: 10px;
@@ -60,7 +60,7 @@ h2 {
   cursor: pointer;
 }
 
-.social_media {
+.social-media {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -73,7 +73,7 @@ footer > p {
   padding-right: 5px;
 }
 
-.project_1 > a > img, .project_2 > a > img, .project_3 > a > img {
+.project-1 > a > img, .project-2 > a > img, .project-3 > a > img {
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -90,7 +90,7 @@ footer > p {
   text-decoration: none;
 }
 
-.mockup, .hammerhead, .pixel_art_maker {
+.mockup, .hammerhead, .pixel-art-maker {
   width: 320px;
   height: 200px;
 }
@@ -99,12 +99,12 @@ footer > hr {
   margin-top: 15px;
 }
 
-.project_1 > p, .project_2 > p, .project_3 > p {
+.project-1 > p, .project-2 > p, .project-3 > p {
   margin-bottom: 10px;
 }
 
 /* creates a grid for profile information and content of website to make it responsive */
-.profile_and_content {
+.profile-and-content {
   display: grid;
 }
 
@@ -115,16 +115,16 @@ footer > hr {
   border-radius: 10px;
 }
 
-.about_me_section > p > span {
+.about-me-section > p > span {
   font-weight: bold;
 }
 
-.about_me_section > p {
+.about-me-section > p {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.profile_picture {
+.profile-picture {
   border-radius: 10px;
   margin-top: 20px;
   width: 160px;
@@ -132,31 +132,31 @@ footer > hr {
 }
 
 /* groups profile picture and about me section so that they will organize themselves next to each other on mobile devices */
-.profile_picture_and_about_me_sections {
+.profile-picture-and-about-me-sections {
   display: flex;
   flex-wrap: wrap;
 }
 
-.skills_section > p {
+.skills-section > p {
   font-weight: bold;
 }
 
-.skills_section {
+.skills-section {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.skills_listed > img {
+.skills-listed > img {
   width: 40px;
   height: 40px;
 }
 
-.main_content {
+.main-content {
   grid-column: 2;
 }
 
 @media screen and (min-width: 550px) {
-  .logo_image {
+  .logo-image {
     height: 100px;
   }
 }
@@ -168,12 +168,12 @@ footer > hr {
 }
 
 @media screen and (max-width: 659px) {
-  .list_of_projects {
+  .list-of-projects {
     display: grid;
     justify-content: center;
   }
 
-  .featured_work > h2 {
+  .featured-work > h2 {
     font-size: 15px;
   }
 
@@ -189,7 +189,7 @@ footer > hr {
     display: grid;
   }
 
-  .profile_picture {
+  .profile-picture {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -197,18 +197,18 @@ footer > hr {
     height: 75px;
   }
 
-  .profile_picture_and_about_me_sections {
+  .profile-picture-and-about-me-sections {
     flex-wrap: nowrap;
   }
 
-  .main_content {
+  .main-content {
     grid-row: 2;
     grid-column: 1;
   }
 }
 
 @media screen and (min-width: 660px) {
-  .list_of_projects {
+  .list-of-projects {
     display: grid;
     justify-content: center;
   }
@@ -218,12 +218,12 @@ footer > hr {
   }
 
   /* sets a specific width to the first column so it will not continuously expand */
-  .profile_and_content {
+  .profile-and-content {
     display: grid;
     grid-template-columns: 215px auto;
   }
 
-  .profile_picture {
+  .profile-picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -231,28 +231,28 @@ footer > hr {
 }
 
 @media screen and (max-width: 890px) {
-  .project_2, .project_3 {
+  .project-2, .project-3 {
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 890px) {
 
-  .main_content{
+  .main-content{
     width:100%;
   }
 
-  .project_1 {
+  .project-1 {
     grid-row: 2;
     padding-right: 10px;
   }
 
-  .project_2 {
+  .project-2 {
     grid-row: 2;
     grid-column: 2;
   }
 
-  .project_3 {
+  .project-3 {
     grid-row: 3;
     margin-top: 30px;
   }
@@ -266,29 +266,29 @@ footer > hr {
     margin-right: auto;
   }
 
-  .list_of_projects {
+  .list-of-projects {
     display: grid;
     grid-column-gap: 17px;
   }
 
-  .project_1 {
+  .project-1 {
     grid-column: 1;
     grid-row: 1;
     padding-right: 0px;
   }
 
-  .project_2 {
+  .project-2 {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .project_3 {
+  .project-3 {
     grid-column: 3;
     grid-row: 1;
     margin-top: 0px;
   }
 
-  .profile_picture {
+  .profile-picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
