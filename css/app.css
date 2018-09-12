@@ -1,7 +1,14 @@
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: space-between; */
+  background-image: url(https://assets.visitphilly.com/wp-content/uploads/2018/02/Philadelphia-Skyline-sunset-R-Kennedy-2200x1237.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.name-and-position-background {
+background-color: rgba(255, 255, 255, .8);
 }
 
 .logo-image {
@@ -155,7 +162,7 @@ footer > hr {
   grid-column: 2;
 }
 
-@media screen and (min-width: 550px) {
+/* @media screen and (min-width: 550px) {
   .logo-image {
     height: 100px;
   }
@@ -218,7 +225,7 @@ footer > hr {
   }
 
   /* sets a specific width to the first column so it will not continuously expand */
-  .profile-and-content {
+  /* .profile-and-content {
     display: grid;
     grid-template-columns: 215px auto;
   }
@@ -293,4 +300,4 @@ footer > hr {
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
