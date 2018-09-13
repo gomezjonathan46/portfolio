@@ -15,6 +15,14 @@ border-radius: 15px;
   top: 0;
 }
 
+.contact-form {
+  max-width: 400px;
+}
+
+.form-control {
+  margin-bottom: 3px;
+}
+
 .logo-image {
   height: 75px;
   padding-top: 10px;
