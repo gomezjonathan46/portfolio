@@ -6,11 +6,11 @@ header {
 
 .name-and-position-background {
 background-color: rgba(255, 255, 255, .8);
+border-radius: 15px;
 /* animation: slide-left 4s; */
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -57,6 +57,8 @@ h3 {
 
 h2 {
   color: #2d3c49;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 
 .project-1, .project-2, .project-3 {
