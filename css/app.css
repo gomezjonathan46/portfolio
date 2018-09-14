@@ -1,5 +1,5 @@
 header {
-  background-image: url(https://assets.visitphilly.com/wp-content/uploads/2018/02/Philadelphia-Skyline-sunset-R-Kennedy-2200x1237.jpg);
+  background-image: url("/images/bridge.jpg");
   height: 100vh;
   background-size: cover;
 }
@@ -127,7 +127,7 @@ footer > p {
 }
 
 .project-img {
-  width: 100%;
+  width: 350px;
   height: 220px;
 }
 
