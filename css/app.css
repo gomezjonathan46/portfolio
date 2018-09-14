@@ -7,7 +7,21 @@ header {
 .name-and-position-background {
 background-color: rgba(255, 255, 255, .8);
 border-radius: 15px;
-/* animation: slide-left 4s; */
+position: relative;
+-webkit-animation: mymove 1.75s;
+animation: mymove 1.75s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {right: -1000px;}
+  to {right: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {right: -1000px;}
+  to {right: 0px;}
 }
 
 .sticky {
