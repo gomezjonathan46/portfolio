@@ -72,8 +72,25 @@ animation: mymove 1.75s;
   padding-bottom: 25px;
 }
 
-hr {
-  margin-bottom: 20px;
+footer {
+  background-color: #2d3c49;
+  color: white;
+  margin-top: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.fab {
+  color: white;
+}
+
+.social-media > a {
+  margin-right: 7px;
 }
 
 /* groups name and position classes to style them together */
@@ -121,12 +138,6 @@ h2 {
   padding-bottom: 10px;
   padding-right: 5px;
   cursor: pointer;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
 
 footer > p {
