@@ -95,6 +95,14 @@ footer {
   margin-right: 7px;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/hamburger.png);
+}
+
 /* groups name and position classes to style them together */
 .name-and-position {
   padding-right: 5px;
