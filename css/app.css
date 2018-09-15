@@ -109,8 +109,10 @@ h3 {
 
 h2 {
   color: #2d3c49;
-  padding-top: 55px;
+  padding-top: 85px;
   margin-top: -55px;
+  padding-bottom: 20px;
+  text-decoration: underline;
 }
 
 .social-media > a > img {
