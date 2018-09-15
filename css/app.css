@@ -56,6 +56,22 @@ animation: mymove 1.75s;
   color: white;
 }
 
+.btn-primary {
+  background-color: #2d3c49;
+  border-color: #2d3c49;
+}
+
+.btn-primary:hover {
+  background-color: #2d3c49;
+  border-color: #2d3c49;
+  text-decoration: underline;
+}
+
+.project-item {
+  color: #2d3c49;
+  padding-bottom: 25px;
+}
+
 hr {
   margin-bottom: 20px;
 }
@@ -95,10 +111,6 @@ h2 {
   color: #2d3c49;
   padding-top: 55px;
   margin-top: -55px;
-}
-
-.project-item {
-  color: #2d3c49;
 }
 
 .social-media > a > img {
