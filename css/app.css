@@ -111,6 +111,10 @@ footer {
     background-image: url(../images/hamburger.png);
 }
 
+h1, h2, h3 {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
+
 /* groups name and position classes to style them together */
 .name-and-position {
   padding-right: 5px;
