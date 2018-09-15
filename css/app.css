@@ -91,6 +91,10 @@ footer {
   color: white;
 }
 
+.fab:hover {
+  color: rgb(181, 181, 181);
+}
+
 .row > .fab {
   color: #2d3c49;
 }
