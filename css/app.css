@@ -218,6 +218,14 @@ footer > hr {
 
 .profile-picture {
   border-radius: 75px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 430px) {
+  .profile-picture {
+    width: 290px;
+  }
 }
 
 /* groups profile picture and about me section so that they will organize themselves next to each other on mobile devices */
