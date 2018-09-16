@@ -1,3 +1,8 @@
+/* includes customized font from google */
+body {
+  font-family: 'Encode Sans Condensed', sans-serif, verdana;
+}
+
 header {
   background-image: url("../images/bridge.jpg");
   height: 100vh;
@@ -10,6 +15,15 @@ border-radius: 15px;
 position: relative;
 -webkit-animation: mymove 1.75s;
 animation: mymove 1.75s;
+}
+
+/* groups name and position classes to style them together */
+.name-and-position {
+  padding-right: 5px;
+  color: #2d3c49;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -76,15 +90,19 @@ footer {
   background-color: #2d3c49;
   color: white;
   margin-top: 50px;
-  /* eliminate white space under footer*/
-  padding-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding-top: 10px;
+  align-items: center;
 }
 
 .fab {
@@ -100,7 +118,7 @@ footer {
 }
 
 .social-media > a {
-  margin-right: 7px;
+  margin-left: 7px;
 }
 
 .navbar-light .navbar-toggler {
@@ -115,24 +133,24 @@ h1, h2, h3 {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
 }
 
-/* groups name and position classes to style them together */
-.name-and-position {
-  padding-right: 5px;
-  color: #2d3c49;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+hr {
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  padding-left: 5px;
+}
+
+.contact-info > p {
+  margin-bottom: 0px;
 }
 
 .main-image {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-/* includes customized font from google */
-body {
-  font-family: 'Encode Sans Condensed', sans-serif, verdana;
 }
 
 h1 {
@@ -154,19 +172,10 @@ h2 {
   text-decoration: underline;
 }
 
-.social-media > a > img {
-  width: 50px;
-  height: 50px;
-  padding-bottom: 10px;
-  padding-right: 5px;
-  cursor: pointer;
-}
-
 footer > p {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0px;
-  padding-right: 5px;
+  margin-bottom: 0px;
 }
 
 .project-item > a > img {
@@ -175,49 +184,13 @@ footer > p {
   border-radius: 10px;
 }
 
-.button {
-  cursor: pointer;
-  min-width: 48px;
-  min-height: 48px;
-  padding: 5px;
-  background-color: rgba(22, 136, 216, 0.3686274509803922);
-  border-radius: 10px;
-  color: black;
-  text-decoration: none;
-}
-
 .project-img {
   width: 350px;
   height: 220px;
 }
 
-footer > hr {
-  margin-top: 15px;
-}
-
 .project-item > p {
   margin-bottom: 10px;
-}
-
-/* creates a grid for profile information and content of website to make it responsive */
-.profile-and-content {
-  display: grid;
-}
-
-.profile {
-  grid-column: 1;
-  margin-right: 15px;
-  background-color: rgba(22, 136, 216, 0.3686274509803922);
-  border-radius: 10px;
-}
-
-.about-me-section > p > span {
-  font-weight: bold;
-}
-
-.about-me-section > p {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .profile-picture {
@@ -230,168 +203,12 @@ footer > hr {
   .profile-picture {
     width: 290px;
   }
-}
-
-/* groups profile picture and about me section so that they will organize themselves next to each other on mobile devices */
-.profile-picture-and-about-me-sections {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skills-section > p {
-  font-weight: bold;
-}
-
-.skills-section {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.skills-listed > img {
-  width: 40px;
-  height: 40px;
-}
-
-.main-content {
-  grid-column: 2;
-}
-
-/* @media screen and (min-width: 550px) {
-  .logo-image {
-    height: 100px;
-  }
-}
-
-@media screen and (min-width: 550px) and (max-width: 659px) {
-  h1 {
-    padding-top: 25px;
-  }
-}
-
-@media screen and (max-width: 659px) {
-  .list-of-projects {
-    display: grid;
-    justify-content: center;
-  }
-
-  .featured-work > h2 {
-    font-size: 15px;
-  }
 
   h1 {
     font-size: 30px;
   }
 
-  .profile {
-    grid-row: 1;
-    grid-column: 1;
-    margin-bottom: 15px;
-    width: 100%;
-    display: grid;
-  }
-
-  .profile-picture {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    width: 75px;
-    height: 75px;
-  }
-
-  .profile-picture-and-about-me-sections {
-    flex-wrap: nowrap;
-  }
-
-  .main-content {
-    grid-row: 2;
-    grid-column: 1;
+  h3 {
+    font-size: 20px;
   }
 }
-
-@media screen and (min-width: 660px) {
-  .list-of-projects {
-    display: grid;
-    justify-content: center;
-  }
-
-  .profile {
-    width: 200px;
-  }
-
-  /* sets a specific width to the first column so it will not continuously expand */
-  /* .profile-and-content {
-    display: grid;
-    grid-template-columns: 215px auto;
-  }
-
-  .profile-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 890px) {
-  .project-2, .project-3 {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 890px) {
-
-  .main-content{
-    width:100%;
-  }
-
-  .project-1 {
-    grid-row: 2;
-    padding-right: 10px;
-  }
-
-  .project-2 {
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .project-3 {
-    grid-row: 3;
-    margin-top: 30px;
-  }
-}
-
-
-@media screen and (min-width: 1235px) {
-  body {
-    width: 1235px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .list-of-projects {
-    display: grid;
-    grid-column-gap: 17px;
-  }
-
-  .project-1 {
-    grid-column: 1;
-    grid-row: 1;
-    padding-right: 0px;
-  }
-
-  .project-2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .project-3 {
-    grid-column: 3;
-    grid-row: 1;
-    margin-top: 0px;
-  }
-
-  .profile-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
