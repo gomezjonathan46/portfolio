@@ -141,6 +141,12 @@ hr {
 
 .contact-info {
   padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info > a {
+  color: white;
 }
 
 .contact-info > p {
