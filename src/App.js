@@ -1,13 +1,12 @@
 import React from "react";
-import Sun from "./components/Sun.js";
-import Moon from "./components/Moon.js";
+import DayNightToggle from "./components/DayNightToggle";
+
 
 function App() {
   return (
     <div>
       <h1 className="text-9xl">Welcome to My Portfolio</h1>
-      <Sun/>
-      <Moon/>
+      <DayNightToggle/>
     </div>
   );
 }
