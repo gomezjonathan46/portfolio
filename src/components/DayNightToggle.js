@@ -4,8 +4,8 @@ const Sun = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
-    width="50mm"
-    height="188.594"
+    width="100%"
+    // height="188.594"
     version="1.1"
     viewBox="0 0 50 49.899"
   >
@@ -38,8 +38,8 @@ const Moon = (props) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
-    width="187.411"
-    height="187.411"
+    width="100%"
+    // height="187.411"
     version="1.1"
     viewBox="0 0 49.586 49.586"
   >
@@ -98,9 +98,13 @@ export default function DayNightToggle() {
   }
 
   return (
-    <div className={background} onClick={handleClick}>
-      <Sun />
-      <Moon />    
+    <div className={background + 'flex'} onClick={handleClick}>
+      <div className='w-5'>
+        <Sun />
+      </div>
+      <div className='w-5'>
+        <Moon />    
+      </div>
     </div>
   );
 }
