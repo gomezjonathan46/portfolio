@@ -117,7 +117,9 @@ export default function DayNightToggle() {
       <div className="py-1 pl-1">
         <Moon />
       </div>
-      <div className="absolute h-[20px] w-[20px] rounded-full bg-white top-[3px] shadow-1"></div>
+      <div
+        className={`shadow-1 absolute ${background === light ? "left-[29px]" : "left-[3px]"} top-[3px] h-[20px] w-[20px] rounded-full bg-white transition-all ease-in-out duration-200`}
+      ></div>
     </div>
   );
 }
