@@ -2,10 +2,12 @@ import DayNightToggle from "./components/DayNightToggle";
 
 export default function Nav() {
   return (
-    <div className="mt-3 flex items-center relative">
-      <span className="google-font text-nowrap text-3xl">Jonathan Gomez</span>
-      <DayNightToggle/>
-      <ul className="flex ml-auto z-10">
+    <div className="relative mt-3 flex items-center">
+      <button className="google-font z-10 text-nowrap text-3xl">
+        Jonathan Gomez
+      </button>
+      <DayNightToggle />
+      <ul className="z-10 ml-auto flex">
         <li>
           <button className="hover:underline">About</button>
         </li>

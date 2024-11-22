@@ -107,7 +107,7 @@ export default function DayNightToggle() {
   }
 
   return (
-    <div className="absolute left-0 right-0 mx-auto text-center z-0">
+    <div className="absolute left-0 right-0 z-0 mx-auto text-center">
       <div
         className={`${background} relative mx-auto flex h-[30px] w-[56px] rounded-full border-2 ${background === light ? "border-[#F0EAD6]" : "border-white"} px-1`}
         onClick={handleClick}
