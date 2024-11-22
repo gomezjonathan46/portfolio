@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Sun = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
     width="100%"
-    // height="188.594"
+    height="100%"
     version="1.1"
     viewBox="0 0 50 49.899"
   >
@@ -35,11 +35,11 @@ const Sun = (props) => (
 );
 
 const Moon = (props) => (
-    <svg
+  <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
     width="100%"
-    // height="187.411"
+    height="100%"
     version="1.1"
     viewBox="0 0 49.586 49.586"
   >
@@ -85,27 +85,38 @@ const Moon = (props) => (
 );
 
 export default function DayNightToggle() {
-  const day = "bg-[#f60] ";
-  const night = "bg-[#18171e] ";
-  const [background, setBackground] = useState(day);
+  const light = "bg-[#f60] ";
+  const dark = "bg-[#18171e] ";
+  const [background, setBackground] = useState(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      return dark;
+    } else {
+      return light;
+    }
+  });
 
   function handleClick() {
-    if (background === day) {
-      setBackground(night);
+    if (background === light) {
+      setBackground(dark);
     } else {
-      setBackground(day);
+      setBackground(light);
     }
   }
 
   return (
-    <div className={background + 'flex'} onClick={handleClick}>
-      <div className='w-5'>
+    <div
+      className={background + "flex w-[56px] rounded-full"}
+      onClick={handleClick}
+    >
+      <div className="m-1 h-5">
         <Sun />
       </div>
-      <div className='w-5'>
-        <Moon />    
+      <div className="m-1 h-5">
+        <Moon />
       </div>
     </div>
   );
 }
-
