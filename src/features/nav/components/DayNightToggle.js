@@ -107,19 +107,21 @@ export default function DayNightToggle() {
   }
 
   return (
-    <div
-      className={`${background} relative flex h-[30px] w-[56px] rounded-full border-2 border-white px-1`}
-      onClick={handleClick}
-    >
-      <div className="py-1 pr-1">
-        <Sun />
-      </div>
-      <div className="py-1 pl-1">
-        <Moon />
-      </div>
+    <div className="absolute left-0 right-0 mx-auto text-center z-0">
       <div
-        className={`shadow-1 absolute ${background === light ? "left-[29px]" : "left-[3px]"} top-[3px] h-[20px] w-[20px] rounded-full bg-white transition-all ease-in-out duration-200`}
-      ></div>
+        className={`${background} relative mx-auto flex h-[30px] w-[56px] rounded-full border-2 ${background === light ? "border-[#F0EAD6]" : "border-white"} px-1`}
+        onClick={handleClick}
+      >
+        <div className="py-1 pr-1">
+          <Sun />
+        </div>
+        <div className="py-1 pl-1">
+          <Moon />
+        </div>
+        <div
+          className={`shadow-1 absolute ${background === light ? "left-[29px]" : "left-[3px]"} top-[3px] h-[20px] w-[20px] rounded-full bg-white transition-all duration-200 ease-in-out`}
+        ></div>
+      </div>
     </div>
   );
 }
