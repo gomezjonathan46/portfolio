@@ -108,9 +108,7 @@ export default function DayNightToggle() {
 
   return (
     <div
-      className={
-        `${background} flex w-[56px] h-[30px] rounded-full border-2 border-white px-1`
-      }
+      className={`${background} relative flex h-[30px] w-[56px] rounded-full border-2 border-white px-1`}
       onClick={handleClick}
     >
       <div className="py-1 pr-1">
@@ -119,6 +117,7 @@ export default function DayNightToggle() {
       <div className="py-1 pl-1">
         <Moon />
       </div>
+      <div className="absolute h-[20px] w-[20px] rounded-full bg-white top-[3px] shadow-1"></div>
     </div>
   );
 }
