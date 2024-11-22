@@ -85,8 +85,8 @@ const Moon = (props) => (
 );
 
 export default function DayNightToggle() {
-  const light = "bg-[#f60] ";
-  const dark = "bg-[#18171e] ";
+  const light = "bg-[#f60]";
+  const dark = "bg-[#18171e]";
   const [background, setBackground] = useState(() => {
     if (
       window.matchMedia &&
@@ -108,13 +108,15 @@ export default function DayNightToggle() {
 
   return (
     <div
-      className={background + "flex w-[56px] rounded-full"}
+      className={
+        `${background} flex w-[56px] h-[30px] rounded-full border-2 border-white px-1`
+      }
       onClick={handleClick}
     >
-      <div className="m-1 h-5">
+      <div className="py-1 pr-1">
         <Sun />
       </div>
-      <div className="m-1 h-5">
+      <div className="py-1 pl-1">
         <Moon />
       </div>
     </div>
