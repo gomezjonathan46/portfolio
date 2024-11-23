@@ -8,7 +8,7 @@ export default function Nav() {
         Jonathan Gomez
       </button>
       <DayNightToggle />
-      <Sections/>
+      <Sections />
     </div>
   );
 }

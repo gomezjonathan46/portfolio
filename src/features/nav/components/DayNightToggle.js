@@ -107,7 +107,7 @@ export default function DayNightToggle() {
   }
 
   return (
-    <div className="absolute left-0 right-0 z-20 sm:z-0 mx-auto text-center">
+    <div className="absolute right-14 z-20 mx-auto text-center sm:left-0 sm:right-0 sm:z-0">
       <div
         className={`${background} relative mx-auto flex h-[30px] w-[56px] rounded-full border-2 ${background === light ? "border-[#F0EAD6]" : "border-white"} px-1`}
         onClick={handleClick}
@@ -119,7 +119,7 @@ export default function DayNightToggle() {
           <Moon />
         </div>
         <div
-          className={`shadow-1 absolute ${background === light ? "left-[29px]" : "left-[3px]"} top-[3px] h-[20px] w-[20px] rounded-full bg-white transition-all duration-200 ease-in-out`}
+          className={`absolute shadow-1 ${background === light ? "left-[29px]" : "left-[3px]"} top-[3px] h-[20px] w-[20px] rounded-full bg-white transition-all duration-200 ease-in-out`}
         ></div>
       </div>
     </div>
