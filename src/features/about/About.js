@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mx-[5%]">
       <img
         className="mb-[1.15rem] h-52 w-52 rounded-full shadow-xl md:mb-0"
         src={require("./assets/me.png")}
