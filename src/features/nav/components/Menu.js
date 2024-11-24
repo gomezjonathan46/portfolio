@@ -3,8 +3,7 @@ import { useState, useEffect } from "react";
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [hiddenClassTimer, setHiddenClassTimer] = useState('hidden');
-
+  const [hiddenClassTimer, setHiddenClassTimer] = useState("hidden");
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,25 +20,25 @@ export default function Menu() {
     if (menuOpen) {
       setMenuOpen(false);
       setTimeout(() => {
-        setHiddenClassTimer('hidden');
+        setHiddenClassTimer("hidden");
       }, 75);
     } else {
       setMenuOpen(true);
-      setHiddenClassTimer('');
+      setHiddenClassTimer("");
     }
   }
 
   return (
     <div
-      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? menuOpen ? "bg-white/50" : "bg-white/0" : "bg-white/0"} p-3 transition-all duration-75`}
+      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? "bg-white/100 shadow-sm" : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
     >
-      <div className="float-right mb-3 ml-auto md:hidden" onClick={handleClick}>
+      <div className="float-right ml-auto md:hidden hover:cursor-pointer" onClick={handleClick}>
         <div className="h-[1px] w-[25px] bg-black"></div>
         <div className="my-1 h-[1px] w-[20px] bg-black"></div>
         <div className="h-[1px] w-[25px] bg-black"></div>
       </div>
       <ul
-        className={`flex flex-col md:mt-0 md:flex-row md:pt-0 transition-all visible duration-75 ${isSmallScreen ? (menuOpen ? "block opacity-100" : `${hiddenClassTimer} opacity-0`) : "block"}`}
+        className={`visible mt-3 flex flex-col transition-all duration-75 md:mt-0 md:flex-row md:pt-0 ${isSmallScreen ? (menuOpen ? "block opacity-100" : `${hiddenClassTimer} opacity-0`) : "block"}`}
       >
         <li>
           <button className="float-right hover:underline">About</button>

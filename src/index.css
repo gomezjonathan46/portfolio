@@ -24,6 +24,10 @@ code {
   font-family: "Fleur De Leah";
 }
 
+.shadow-bottom {
+  box-shadow: 0 4px 4px -4px gray;
+}
+
 @media only screen and (max-width: 420px) {
   .hideOnMobile {
     display: none;
