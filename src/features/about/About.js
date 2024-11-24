@@ -1,8 +1,13 @@
 export default function About() {
   return (
-    <div>
-      <img src={require("./assets/me.png")} alt="Jonathan Gomez"/>
-      <p>
+    <div className="flex flex-col items-center">
+      <img
+        className="mb-[1.15rem] md:mb-0 h-52 w-52 rounded-full shadow-xl"
+        src={require("./assets/me.png")}
+        alt="Jonathan Gomez"
+      />
+      <div className="h-[1px] w-40 rounded-lg bg-black/25 md:hidden"></div>
+      <p className="mt-4 md:mt-0">
         I began my career in Finance with a prestigious Private Equity firm in
         Philadelphia. However, I discovered my passion for technology too
         invigorating and empowering to ignore. With more than 5 billion

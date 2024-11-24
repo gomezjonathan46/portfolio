@@ -25,7 +25,7 @@ code {
 }
 
 .shadow-bottom {
-  box-shadow: 0 4px 4px -4px gray;
+  box-shadow: 0 4px 6px -6px gray;
 }
 
 @media only screen and (max-width: 420px) {
