@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="flex flex-col items-center">
       <img
-        className="mb-[1.15rem] md:mb-0 h-52 w-52 rounded-full shadow-xl"
+        className="mb-[1.15rem] h-52 w-52 rounded-full shadow-xl md:mb-0"
         src={require("./assets/me.png")}
         alt="Jonathan Gomez"
       />

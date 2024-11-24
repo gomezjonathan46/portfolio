@@ -4,7 +4,7 @@ import About from "./features/about/About";
 
 function App() {
   return (
-    <div>
+    <div className="">
       <Nav />
       <About />
     </div>
