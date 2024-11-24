@@ -4,7 +4,7 @@ import About from "./features/about/About";
 
 function App() {
   return (
-    <div className="">
+    <div className="fontSizeOnMobile">
       <Nav />
       <About />
     </div>

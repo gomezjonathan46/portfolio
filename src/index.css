@@ -30,4 +30,14 @@ code {
   .hideOnMobile {
     display: none;
   }
+  .fontSizeOnMobile {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 640px) {
+  .fontSizeOnMobile {
+    line-height: 1.5rem;
+  }
 }
