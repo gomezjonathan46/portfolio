@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="mx-[5%] mt-[5%]">
+    <div className="mx-[5%] mt-[15%] sm:mt-[5%]">
       <div className="right-border h-52 min-w-52 text-center sm:float-left sm:mr-5 sm:pr-5 md:h-56 md:w-56">
         <img
           className="mx-auto mb-[1.15rem] h-52 w-52 rounded-full shadow-xl md:mb-0 md:mr-[1.15rem]"
@@ -8,7 +8,7 @@ export default function About() {
           alt="Jonathan Gomez"
         />
       </div>
-      <div className="lg:h-56 lg:relative">
+      <div className="lg:relative lg:h-56">
         <p className="mt-4 md:ml-4 md:mt-0 lg:absolute lg:left-[224px] lg:top-1/2 lg:-translate-y-1/2">
           I began my career in Finance with a prestigious Private Equity firm in
           Philadelphia. However, I discovered my passion for technology too
