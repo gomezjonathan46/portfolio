@@ -107,7 +107,7 @@ export default function DayNightToggle() {
   }
 
   return (
-    <div className="hideOnMobile absolute right-32 top-1 z-20 mx-auto text-center sm:left-0 sm:right-0 sm:z-0 md:top-[10px]">
+    <div className="hide-on-mobile absolute right-32 top-1 z-20 mx-auto text-center sm:left-0 sm:right-0 sm:z-0 md:top-[10px]">
       <div
         className={`${background} relative mx-auto flex h-[30px] w-[56px] rounded-full border-2 ${background === light ? "border-[#F0EAD6]" : "border-white"} px-1`}
         onClick={handleClick}

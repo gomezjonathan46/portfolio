@@ -27,20 +27,27 @@ code {
 }
 
 @media only screen and (max-width: 420px) {
-  .hideOnMobile {
+  .hide-on-mobile {
     display: none;
   }
 }
 
 @media only screen and (max-width: 315px) {
-  .fontSizeOnMobile {
+  .font-size-on-mobile {
     font-size: 12px;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 316px) and (max-width: 640px) {
-  .fontSizeOnMobile {
+  .font-size-on-mobile {
     line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .right-border {
+    border-right: 1px solid;
+    border-right-color: rgba(108, 108, 108, 0.642);
   }
 }
