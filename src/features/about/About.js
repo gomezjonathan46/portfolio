@@ -9,7 +9,7 @@ export default function About() {
         />
       </div>
       <div className="h-56 lg:relative">
-        <p className="lg:absolute lg:top-1/2 lg:left-[224px] mt-4 lg:-translate-y-1/2 md:ml-4 md:mt-0">
+        <p className="mt-4 md:ml-4 md:mt-0 lg:absolute lg:left-[224px] lg:top-1/2 lg:-translate-y-1/2">
           I began my career in Finance with a prestigious Private Equity firm in
           Philadelphia. However, I discovered my passion for technology too
           invigorating and empowering to ignore. With more than 5 billion
