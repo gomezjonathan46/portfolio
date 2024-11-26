@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Projects() {
   return (
-    <div className="mx-auto mb-10 mt-[15%] flex flex-wrap justify-around sm:mt-[5%]">
+    <div className="custom-grid mx-auto mt-[15%] justify-evenly gap-5 sm:mt-[5%]">
       <Project
         link={
           "http://staging.brownstein.group/clients/career-wardrobe/website/"
@@ -44,14 +44,14 @@ function Project({ link, image, title, alt }) {
 
   return (
     <div
-      className="mx-3 mb-5 w-72 rounded-md bg-white/50 shadow-md sm:w-80"
+      className="project-responsive-width rounded-md bg-white/50 shadow-md"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
       <a href={link} target="_blank" rel="noreferrer">
-        <div className="h-auto overflow-hidden relative">
+        <div className="relative h-auto overflow-hidden">
           <div
-            className={`h-full absolute w-72 rounded-t-md bg-black/25 sm:w-80 ${isHovering ? "block" : "hidden"}`}
+            className={`absolute inset-0 rounded-t-md bg-black/25 ${isHovering ? "block" : "hidden"}`}
           ></div>
           <img
             className="h-full w-auto rounded-t-md"

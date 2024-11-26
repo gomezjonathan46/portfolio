@@ -26,8 +26,36 @@ code {
   box-shadow: 0 4px 6px -6px gray;
 }
 
-.height-stretch {
-  height: stretch;
+.custom-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.project-responsive-width {
+  width: 18rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .custom-grid {
+    grid-template-columns: auto auto;
+    width: 38rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .project-responsive-width {
+    width: 22rem;
+  }
+  .custom-grid {
+    width: 46rem;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .custom-grid {
+    grid-template-columns: auto auto auto;
+    width: 69rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
