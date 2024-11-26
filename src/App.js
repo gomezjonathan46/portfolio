@@ -3,6 +3,7 @@ import Nav from "./features/nav/Nav";
 import About from "./features/about/About";
 import Projects from "./features/projects/Projects";
 import Header from "./components/Header";
+import Experience from "./features/experience/Experience";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <About />
       <Header text="Projects" />
       <Projects />
+      <Header text="Experience" />
+      <Experience />
     </div>
   );
 }
