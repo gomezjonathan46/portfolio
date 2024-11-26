@@ -29,12 +29,78 @@ export default function Projects() {
         title={"Intexar Health Page"}
         alt={"Intexar Health Page"}
       />
-      {/* <Project
-        link={}
-        image={}
-        title={}
-        alt={}
-      /> */}
+      <Project
+        link={'https://www.saint-gobain-northamerica.com/careers'}
+        image={'SG-statistics'}
+        title={'Saint Gobain Statistics'}
+        alt={'Saint Gobain Statistics'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/Memory-Game-Project/'}
+        image={'matching'}
+        title={'Matching Game'}
+        alt={'Matching Game'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/Pixel-Art-Maker/'}
+        image={'pixel'}
+        title={'Pixel Art Maker'}
+        alt={'Pixel Art Maker'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/BG-Newsletter/'}
+        image={'bg-newsletter'}
+        title={'BG Newsletter Email'}
+        alt={'BG Newsletter Email'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/speedpay-email/'}
+        image={'speedpay-email'}
+        title={'Speedpay Email'}
+        alt={'Speedpay Email'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/BG-Talk/'}
+        image={'bg-talk'}
+        title={'BG Talk Email'}
+        alt={'BG Talk Email'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/IKEA-email/'}
+        image={'ikea-email'}
+        title={'IKEA Email'}
+        alt={'IKEA Email'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/NJM-5404/'}
+        image={'banner-1'}
+        title={'NJM Banner'}
+        alt={'NJM Banner'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/NJM-1028/'}
+        image={'banner-2'}
+        title={'NJM Banner'}
+        alt={'NJM Banner'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/NJM-5202/'}
+        image={'banner-3'}
+        title={'NJM Banner'}
+        alt={'NJM Banner'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/NJM-1654/'}
+        image={'banner-4'}
+        title={'NJM Banner'}
+        alt={'NJM Banner'}
+      />
+      <Project
+        link={'https://gomezjonathan46.github.io/Inspira-1092/'}
+        image={'banner-5'}
+        title={'NJM Banner'}
+        alt={'NJM Banner'}
+      />
     </div>
   );
 }
