@@ -26,6 +26,10 @@ code {
   box-shadow: 0 4px 6px -6px gray;
 }
 
+.height-stretch {
+  height: stretch;
+}
+
 @media only screen and (max-width: 420px) {
   .hide-on-mobile {
     display: none;
