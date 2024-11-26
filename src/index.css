@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-.google-font {
+.google-font-fleur {
   font-family: "Fleur De Leah";
 }
 
@@ -69,6 +69,9 @@ code {
     font-size: 12px;
     line-height: 1rem;
   }
+  .project-responsive-width {
+    width: 17rem;
+  }  
 }
 
 @media (min-width: 316px) and (max-width: 640px) {

@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="font-size-on-mobile">
       <Nav />
-      <Header 
-        text="Hello"
-      />
+      <Header text="Hello, I'm Jonathan" />
       <About />
+      <Header text="Projects" />
       <Projects />
     </div>
   );
