@@ -3,13 +3,29 @@ import { useState, useRef, useLayoutEffect } from "react";
 export default function Experience() {
   return (
     <>
-      <Container />
-      <Container />
+      <Container
+        title={"Application Engineer - I"}
+        date={"2021-2022"}
+        location={"Malvern, PA"}
+        url={"vanguard.com"}
+        description={
+          "Some random details about the job I performed and blah blah blah afgwrbstbwrnbwrbgwebveargfeefbvsdfbwaefgbwrgbvfa"
+        }
+        skillsArray={["test2", "test", "data"]}
+      />
+      <Container
+        title="Software Engineer Intern"
+        date="2020-2021"
+        location="New York, NY"
+        url="example.com"
+        description="Worked on cool projects as an intern."
+        skillsArray={["Python", "Flask", "SQL"]}
+      />
     </>
   );
 }
 
-function Container() {
+function Container({ title, date, location, url, description, skillsArray }) {
   const ref = useRef(null);
   const [experienceDetailsHeight, setExperienceDetailsHeight] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +33,7 @@ function Container() {
   useLayoutEffect(() => {
     if (ref.current) {
       const { height } = ref.current.getBoundingClientRect();
-      setExperienceDetailsHeight(height); // Save the actual height of the details div
+      setExperienceDetailsHeight(height);
     }
   }, []);
 
@@ -29,9 +45,9 @@ function Container() {
     <div className="shadow-around mx-auto mb-1 w-[575px] rounded-md bg-[#7fd1ae]/50 px-4 py-3">
       {/* Title Bar */}
       <div className="flex justify-between" onClick={handleHeightChange}>
-        <p>Application Engineer - I</p>
+        <p>{title}</p>
         <div className="flex items-center">
-          <p className="mr-7">2021 - 2022</p>
+          <p className="mr-7">{date}</p>
           <div className="relative h-3 w-3">
             <div className="absolute top-2/4 h-[1px] w-3 -translate-y-1/2 bg-black"></div>
             <div className="absolute left-2/4 h-3 w-[1px] -translate-x-1/2 bg-black"></div>
@@ -41,7 +57,7 @@ function Container() {
 
       {/* Position Details */}
       <div
-        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} overflow-hidden transition-all duration-1000 ease-in-out`}
+        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} overflow-hidden transition-all duration-75 ease-in-out`}
         style={{
           height: isOpen ? `${experienceDetailsHeight}px` : "0px", // Dynamically set height
         }}
@@ -54,7 +70,7 @@ function Container() {
             src={require(`location icon`)}
             alt={alt}
           /> */}
-              <p>Malvern, PA</p>
+              <p>{location}</p>
             </div>
             <div>
               {/* <img
@@ -62,14 +78,18 @@ function Container() {
             alt={alt}
           /> */}
               {/* <a href={link} target="_blank" rel="noreferrer"> */}
-              vanguard.com
+              {url}
               {/* </a> */}
             </div>
           </div>
-          <p>Details</p>
+          <p>{description}</p>
           {/* Skills */}
-          <div className="flex">
-            <Skills data={["test2", "test", "data"]} />
+          <div className="flex flex-wrap">
+            {skillsArray.map((skill, index) => (
+              <p key={index} className="mb-2 mr-2 rounded bg-gray-200 p-2">
+                {skill}
+              </p>
+            ))}
           </div>
         </div>
       </div>
@@ -77,10 +97,10 @@ function Container() {
   );
 }
 
-function Skills({ data }) {
-  return data.map((item, index) => (
-    <p key={index} className="mr-1">
-      {item}
-    </p>
-  ));
-}
+// function Skills({ data }) {
+//   return data.map((item, index) => (
+//     <p key={index} className="mr-1">
+//       {item}
+//     </p>
+//   ));
+// }
