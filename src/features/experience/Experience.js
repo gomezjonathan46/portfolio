@@ -89,9 +89,9 @@ function Container({ title, date, location, url, description, skillsArray }) {
           </div>
           <p>{description}</p>
           {/* Skills */}
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mt-1 mb-2">
             {skillsArray.map((skill, index) => (
-              <p key={index} className="mb-2 mr-2 rounded bg-gray-200 p-2">
+              <p key={index} className="  mr-2 rounded-lg bg-[#f9f7f0] py-1 px-2">
                 {skill}
               </p>
             ))}
