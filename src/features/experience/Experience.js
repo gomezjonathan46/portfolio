@@ -42,13 +42,18 @@ function Container({ title, date, location, url, description, skillsArray }) {
   }
 
   return (
-    <div className="shadow-around mx-auto mb-1 w-[575px] rounded-md bg-[#7fd1ae]/50 px-4 py-3">
+    <div className="shadow-around mx-auto mb-1 w-[575px] rounded-md bg-[#7fd1ae]/50">
       {/* Title Bar */}
-      <div className="flex justify-between" onClick={handleHeightChange}>
+      <div
+        className="flex justify-between px-4 py-3 hover:cursor-pointer"
+        onClick={handleHeightChange}
+      >
         <p>{title}</p>
         <div className="flex items-center">
           <p className="mr-7">{date}</p>
-          <div className="relative h-3 w-3">
+          <div
+            className={`relative h-3 w-3 ${isOpen ? "rotate-45" : "rotate-0"} transition-all duration-500 ease-in-out`}
+          >
             <div className="absolute top-2/4 h-[1px] w-3 -translate-y-1/2 bg-black"></div>
             <div className="absolute left-2/4 h-3 w-[1px] -translate-x-1/2 bg-black"></div>
           </div>
@@ -57,12 +62,12 @@ function Container({ title, date, location, url, description, skillsArray }) {
 
       {/* Position Details */}
       <div
-        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} overflow-hidden transition-all duration-75 ease-in-out`}
+        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} overflow-hidden px-4 transition-all duration-500 ease-in-out`}
         style={{
           height: isOpen ? `${experienceDetailsHeight}px` : "0px", // Dynamically set height
         }}
       >
-        <div ref={ref}>
+        <div ref={ref} className="pb-1">
           {/* location and link */}
           <div className="flex">
             <div>
