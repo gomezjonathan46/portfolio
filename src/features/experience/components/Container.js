@@ -60,8 +60,8 @@ export default function Container({
           />
           {/* location and link */}
           <div className="experience-container-details-custom-grid-item">
-            <div className="mt-1 flex">
-              <div className="mr-3 flex items-center">
+            <div className="mt-2 flex sm:mt-1">
+              <div className="mr-3 flex items-center text-nowrap">
                 <LocationIcon />
                 <p className="ml-1">{location}</p>
               </div>
@@ -77,11 +77,11 @@ export default function Container({
             </div>
             <p>{description}</p>
             {/* Skills */}
-            <div className="mb-2 mt-1 flex flex-wrap">
+            <div className="mt-1 flex flex-wrap">
               {skillsArray.map((skill, index) => (
                 <p
                   key={index}
-                  className="mr-2 rounded-lg bg-[#f9f7f0] px-2 py-1"
+                  className="mb-2 mr-2 rounded-lg bg-[#f9f7f0] px-2 py-1"
                 >
                   {skill}
                 </p>
