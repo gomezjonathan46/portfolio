@@ -15,7 +15,7 @@ export default function Experience() {
         }
         skillsArray={["Angular", "Node.js", "Typescript", "Git"]}
         company={"Vanguard"}
-        logo={"Vanguard.svg"}
+        logo={"vanguard.svg"}
       />
       <Container
         title="Front-End Developer @ Brownstein Group"
