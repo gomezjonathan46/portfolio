@@ -10,7 +10,8 @@ export default function Experience() {
         url={"vanguard.com"}
         href={"https://investor.vanguard.com/corporate-portal"}
         description={
-          "Some random details about the job I performed and blah blah blah Some random details about the job I performed and blah blah blah"
+          `Developed full-stack financial technology secure feature components using modern single page application
+          framework, Angular, and server-side nodejs.`
         }
         skillsArray={["Angular", "Node.js", "Typescript", "Git"]}
         company={"Vanguard"}
@@ -22,8 +23,8 @@ export default function Experience() {
         location="Philadelphia, PA"
         url="brownsteingroup.com"
         href={"https://www.brownsteingroup.com"}
-        description="Some random details about the job I performed and blah"
-        skillsArray={["HTML", "CSS", "JavaScript", "Git"]}
+        description="Developed banner and email advertisements, and web pages using HTML, CSS, JavaScript, and PHP."
+        skillsArray={["HTML", "CSS", "JavaScript", "PHP", "Git"]}
         company={"Brownstein Group"}
         logo={"BG.png"}
       />
@@ -33,7 +34,7 @@ export default function Experience() {
         location="Conshohocken, PA"
         url="hamiltonlane.com"
         href={"https://www.hamiltonlane.com/en-us"}
-        description="Some random details about the job I performed and blah"
+        description="Developed transactional pages to facilitate large settlements in the Private Equity industry."
         skillsArray={[
           "Problem Solving",
           "Analysis",

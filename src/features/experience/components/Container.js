@@ -52,7 +52,7 @@ export default function Container({
           height: isOpen ? `${experienceDetailsHeight}px` : "0px", // Dynamically set height
         }}
       >
-        <div ref={ref} className="experience-container-custom-grid py-2 pb-1">
+        <div ref={ref} className="experience-container-custom-grid pb-2 pt-3">
           <img
             className="experience-container-logo-custom-grid-item h-16 sm:m-auto sm:h-20"
             src={require(`../assets/${logo}`)}
@@ -75,7 +75,7 @@ export default function Container({
                 <p className="ml-1">{url}</p>
               </a>
             </div>
-            <p>{description}</p>
+            <p className="mt-1">{description}</p>
             {/* Skills */}
             <div className="mt-1 flex flex-wrap">
               {skillsArray.map((skill, index) => (
