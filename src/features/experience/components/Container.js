@@ -8,6 +8,8 @@ export default function Container({
   href,
   description,
   skillsArray,
+  logo,
+  company,
 }) {
   const ref = useRef(null);
   const [experienceDetailsHeight, setExperienceDetailsHeight] = useState(0);
@@ -51,8 +53,12 @@ export default function Container({
         }}
       >
         <div ref={ref} className="pb-1">
+          <img className="h-20"
+            src={require(`../assets/${logo}`)}
+            alt={company + "Logo"}
+          />
           {/* location and link */}
-          <div className="flex">
+          <div className="flex mt-1">
             <div className="mr-3 flex items-center">
               <LocationIcon />
               <p className="ml-1">{location}</p>

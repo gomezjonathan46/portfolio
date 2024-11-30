@@ -13,6 +13,8 @@ export default function Experience() {
           "Some random details about the job I performed and blah blah blah afgwrbstbwrnbwrbgwebveargfeefbvsdfbwaefgbwrgbvfa"
         }
         skillsArray={["test2", "test", "data"]}
+        company={"Vanguard"}
+        logo={"BG.png"}
       />
       <Container
         title="Software Engineer Intern"
@@ -22,6 +24,8 @@ export default function Experience() {
         href={"https://investor.vanguard.com/corporate-portal"}
         description="Worked on cool projects as an intern."
         skillsArray={["Python", "Flask", "SQL"]}
+        company={"Vanguard"}
+        logo={"Vanguard.svg"}
       />
     </>
   );
