@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Projects() {
   return (
-    <div className="custom-grid mx-auto justify-evenly gap-5">
+    <div className="project-custom-grid mx-auto justify-evenly gap-5">
       <Project
         link={
           "http://staging.brownstein.group/clients/career-wardrobe/website/"

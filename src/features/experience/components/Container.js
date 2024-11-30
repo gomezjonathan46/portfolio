@@ -27,14 +27,14 @@ export default function Container({
   }
 
   return (
-    <div className="shadow-around mx-auto mb-1 w-[575px] rounded-md bg-[#7fd1ae]/50">
+    <div className="mx-auto mb-2 w-[95%] max-w-[750px] rounded-md">
       {/* Title Bar */}
       <div
-        className="flex justify-between px-4 py-3 hover:cursor-pointer"
+        className="flex justify-between rounded-md bg-[#7fd1ae] px-4 py-3 hover:cursor-pointer"
         onClick={handleHeightChange}
       >
         <p>{title}</p>
-        <div className="flex items-center">
+        <div className="hidden items-center sm:flex">
           <p className="mr-7">{date}</p>
           <div
             className={`relative h-3 w-3 ${isOpen ? "rotate-45" : "rotate-0"} transition-all duration-500 ease-in-out`}
@@ -47,40 +47,46 @@ export default function Container({
 
       {/* Position Details */}
       <div
-        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} overflow-hidden px-4 transition-all duration-500 ease-in-out`}
+        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} mt-1 overflow-hidden rounded-md bg-[#7fd1ae]/50 px-4 transition-all duration-500 ease-in-out`}
         style={{
           height: isOpen ? `${experienceDetailsHeight}px` : "0px", // Dynamically set height
         }}
       >
-        <div ref={ref} className="pb-1">
-          <img className="h-20"
+        <div ref={ref} className="experience-container-custom-grid py-2 pb-1">
+          <img
+            className="experience-container-logo-custom-grid-item h-16 sm:m-auto sm:h-20"
             src={require(`../assets/${logo}`)}
             alt={company + "Logo"}
           />
           {/* location and link */}
-          <div className="flex mt-1">
-            <div className="mr-3 flex items-center">
-              <LocationIcon />
-              <p className="ml-1">{location}</p>
+          <div className="experience-container-details-custom-grid-item">
+            <div className="mt-1 flex">
+              <div className="mr-3 flex items-center">
+                <LocationIcon />
+                <p className="ml-1">{location}</p>
+              </div>
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center"
+              >
+                <LinkIcon />
+                <p className="ml-1">{url}</p>
+              </a>
             </div>
-            <a
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center"
-            >
-              <LinkIcon />
-              <p className="ml-1">{url}</p>
-            </a>
-          </div>
-          <p>{description}</p>
-          {/* Skills */}
-          <div className="mb-2 mt-1 flex flex-wrap">
-            {skillsArray.map((skill, index) => (
-              <p key={index} className="mr-2 rounded-lg bg-[#f9f7f0] px-2 py-1">
-                {skill}
-              </p>
-            ))}
+            <p>{description}</p>
+            {/* Skills */}
+            <div className="mb-2 mt-1 flex flex-wrap">
+              {skillsArray.map((skill, index) => (
+                <p
+                  key={index}
+                  className="mr-2 rounded-lg bg-[#f9f7f0] px-2 py-1"
+                >
+                  {skill}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ code {
   box-shadow: 0 4px 6px -6px gray;
 }
 
-.custom-grid {
+.project-custom-grid {
   display: grid;
   grid-template-columns: auto;
 }
@@ -47,8 +47,26 @@ code {
   box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
 }
 
+@media only screen and (min-width: 640px) {
+  .experience-container-custom-grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .experience-container-details-custom-grid-item {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .experience-container-logo-custom-grid-item {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}
+
 @media only screen and (min-width: 700px) {
-  .custom-grid {
+  .project-custom-grid {
     grid-template-columns: auto auto;
     width: 38rem;
   }
@@ -58,13 +76,13 @@ code {
   .project-responsive-width {
     width: 22rem;
   }
-  .custom-grid {
+  .project-custom-grid {
     width: 46rem;
   }
 }
 
 @media only screen and (min-width: 1150px) {
-  .custom-grid {
+  .project-custom-grid {
     grid-template-columns: auto auto auto;
     width: 69rem;
   }
