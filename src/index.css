@@ -28,6 +28,12 @@ code {
   box-shadow: 0 4px 6px -6px gray;
 }
 
+.shadow-top {
+  -moz-box-shadow: 0 4px 6px -6px gray;
+  -webkit-box-shadow: 0 4px 6px -6px gray;
+  box-shadow: 0 4px 6px -6px gray;
+}
+
 .project-custom-grid {
   display: grid;
   grid-template-columns: auto;
@@ -39,12 +45,6 @@ code {
 
 .experience-detail-animation-height {
   height: 0%;
-}
-
-.shadow-around {
-  -moz-box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
-  -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
-  box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
 }
 
 @media only screen and (min-width: 640px) {
