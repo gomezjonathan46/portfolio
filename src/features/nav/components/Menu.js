@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-export default function Menu() {
+export default function Menu({
+  aboutLink,
+  projectsLink,
+  experienceLink,
+  contactLink,
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [hiddenClassTimer, setHiddenClassTimer] = useState("hidden");
@@ -32,7 +37,10 @@ export default function Menu() {
     <div
       className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? "bg-white/100 shadow-sm" : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
     >
-      <div className="float-right ml-auto md:hidden hover:cursor-pointer" onClick={handleClick}>
+      <div
+        className="float-right ml-auto hover:cursor-pointer md:hidden"
+        onClick={handleClick}
+      >
         <div className="h-[1px] w-[25px] bg-black"></div>
         <div className="my-1 h-[1px] w-[20px] bg-black"></div>
         <div className="h-[1px] w-[25px] bg-black"></div>
@@ -41,16 +49,27 @@ export default function Menu() {
         className={`visible mt-3 flex flex-col transition-all duration-75 md:mt-0 md:flex-row md:pt-0 ${isSmallScreen ? (menuOpen ? "block opacity-100" : `${hiddenClassTimer} opacity-0`) : "block"}`}
       >
         <li>
-          <button className="float-right hover:underline">About</button>
+          <a className="float-right hover:underline" href={`#${aboutLink}`}>
+            About
+          </a>
         </li>
         <li className="md:ml-2">
-          <button className="float-right hover:underline">Projects</button>
+          <a className="float-right hover:underline" href={`#${projectsLink}`}>
+            Projects
+          </a>
         </li>
         <li className="md:ml-2">
-          <button className="float-right hover:underline">Experience</button>
+          <a
+            className="float-right hover:underline"
+            href={`#${experienceLink}`}
+          >
+            Experience
+          </a>
         </li>
         <li className="md:ml-2">
-          <button className="float-right hover:underline">Contact</button>
+          <a className="float-right hover:underline" href={`#${contactLink}`}>
+            Contact
+          </a>
         </li>
       </ul>
     </div>

@@ -7,16 +7,26 @@ import Experience from "./features/experience/Experience";
 import Footer from "./features/footer/Footer";
 
 function App() {
+  const aboutNavLink = "about";
+  const projectsNavLink = "projects";
+  const experienceNavLink = "experience";
+  const contactNavLink = "contact";
+
   return (
     <div className="font-size-on-mobile">
-      <Nav />
-      <Header text="Hello, I'm Jonathan" />
+      <Nav
+        aboutLink={aboutNavLink}
+        projectsLink={projectsNavLink}
+        experienceLink={experienceNavLink}
+        contactLink={contactNavLink}
+      />
+      <Header text="Hello, I'm Jonathan" id={aboutNavLink} />
       <About />
-      <Header text="Projects" />
+      <Header text="Projects" id={projectsNavLink}/>
       <Projects />
-      <Header text="Experience" />
+      <Header text="Experience" id={experienceNavLink}/>
       <Experience />
-      <Footer />
+      <Footer id={contactNavLink}/>
     </div>
   );
 }
