@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.92d70527.css",
+    "main.js": "/portfolio/static/js/main.5c41188f.js",
+    "static/media/bg-newsletter.jpg": "/portfolio/static/media/bg-newsletter.71138061ac5d5fe1fa8b.jpg",
+    "static/media/me.png": "/portfolio/static/media/me.dd0290323350429a21ee.png",
+    "static/media/SG-statistics.jpg": "/portfolio/static/media/SG-statistics.d0d0166b5a0d85dfb104.jpg",
+    "static/media/intexar.jpg": "/portfolio/static/media/intexar.c6057f697619570f4c39.jpg",
+    "static/media/speedpay-email.jpg": "/portfolio/static/media/speedpay-email.9871329f2f9c1baf2f6f.jpg",
+    "static/media/banner-2.jpg": "/portfolio/static/media/banner-2.b2e9ce5aff75baab46be.jpg",
+    "static/media/speedpay.jpg": "/portfolio/static/media/speedpay.e37a086ac6d3bba4ca00.jpg",
+    "static/media/bg-talk.jpg": "/portfolio/static/media/bg-talk.36583320bc9e2dfbecec.jpg",
+    "static/media/cw.jpg": "/portfolio/static/media/cw.116ae674ca693c0356b2.jpg",
+    "static/media/banner-1.jpg": "/portfolio/static/media/banner-1.5d5e90d44a2be56808a7.jpg",
+    "static/media/njm-quiz.jpg": "/portfolio/static/media/njm-quiz.eac097f0fc96c32bbda7.jpg",
+    "static/media/pixel.jpg": "/portfolio/static/media/pixel.fb18f17299c0cf957c7f.jpg",
+    "static/media/banner-3.jpg": "/portfolio/static/media/banner-3.e7804107113aa81a34dd.jpg",
+    "static/media/ikea-email.jpg": "/portfolio/static/media/ikea-email.d00b1e1f171055591a2b.jpg",
+    "static/media/matching.jpg": "/portfolio/static/media/matching.5ab257d5a452472a6396.jpg",
+    "static/media/banner-5.jpg": "/portfolio/static/media/banner-5.e3a843bda1a6a93c3e77.jpg",
+    "static/media/banner-4.jpg": "/portfolio/static/media/banner-4.6f3497eaff17b32c3aea.jpg",
+    "static/media/HL.svg": "/portfolio/static/media/HL.7bc7d72fd2e096931bfc.svg",
+    "static/media/vanguard.svg": "/portfolio/static/media/vanguard.f412468b39474ecb690d.svg",
+    "index.html": "/portfolio/index.html",
+    "main.92d70527.css.map": "/portfolio/static/css/main.92d70527.css.map",
+    "main.5c41188f.js.map": "/portfolio/static/js/main.5c41188f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92d70527.css",
+    "static/js/main.5c41188f.js"
+  ]
+}
