@@ -1,6 +1,9 @@
-export default function Footer({ id, lightDarkMode }) {
+export default function Footer({ id, lightDarkMode, screenSize }) {
   return (
-    <div className={`shadow-top mt-10 ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} pb-2 pt-3`} id={id}>
+    <div
+      className={`shadow-top mt-10 ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} pb-2 pt-3`}
+      id={id}
+    >
       <div className="mx-auto flex w-[95%] justify-between">
         <div className="flex flex-col">
           <a href="tel:+1-215-609-5952">(215) 609-5952</a>
@@ -8,21 +11,29 @@ export default function Footer({ id, lightDarkMode }) {
             gomez.e.jonathan@gmail.com
           </a>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center">
           <a
             href="https://www.linkedin.com/in/jonathangomeze/"
             target="_blank"
             rel="noreferrer"
             className="mr-2"
           >
-            <LinkedInIcon />
+            <LinkedInIcon
+              width={screenSize.width > 375 ? "50" : "25"}
+              height={screenSize.width > 375 ? "50" : "25"}
+              fill={lightDarkMode === "light" ? "#000" : "#fff"}
+            />
           </a>
           <a
             href="https://github.com/gomezjonathan46"
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon />
+            <GitHubIcon
+              width={screenSize.width > 375 ? "50" : "25"}
+              height={screenSize.width > 375 ? "50" : "25"}
+              fill={lightDarkMode === "light" ? "#000" : "#fff"}
+            />
           </a>
         </div>
       </div>
@@ -30,31 +41,31 @@ export default function Footer({ id, lightDarkMode }) {
   );
 }
 
-const LinkedInIcon = (props) => (
+const LinkedInIcon = ({ fill = "#000", width = "25", height = "25" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
-    width="49.997"
-    height="50"
+    width={width}
+    height={height}
     fill="none"
     version="1.1"
     viewBox="0 0 1.5 1.5"
   >
     <path
       id="path1"
-      fill="#000"
+      fill={fill}
       strokeWidth="0.094"
       d="M1.38 0H.128A.123.123 0 0 0 0 .117v1.255a.13.13 0 0 0 .128.128H1.38a.126.126 0 0 0 .12-.128V.117A.115.115 0 0 0 1.38 0M.469 1.25H.25V.583H.47ZM.365.482A.11.11 0 0 1 .25.366.11.11 0 0 1 .367.25.11.11 0 0 1 .48.366.11.11 0 0 1 .365.48m.886.77h-.22V.885c0-.087-.03-.147-.109-.147a.12.12 0 0 0-.11.079.1.1 0 0 0-.007.053v.38H.59V.583h.215v.094a.22.22 0 0 1 .197-.113c.142 0 .249.093.249.293z"
     ></path>
   </svg>
 );
 
-const GitHubIcon = (props) => (
+const GitHubIcon = ({ fill = "#000", width = "25", height = "25" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
-    width="50"
-    height="50"
+    width={width}
+    height={height}
     version="1.1"
     viewBox="0 0 1.25 1.25"
   >
@@ -68,7 +79,7 @@ const GitHubIcon = (props) => (
     >
       <g
         id="Dribbble-Light-Preview"
-        fill="#000"
+        fill={fill}
         transform="translate(-140 -7559)"
       >
         <g id="icons" transform="translate(56 160)">

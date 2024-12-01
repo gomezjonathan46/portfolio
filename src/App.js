@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "./features/nav/Nav";
 import About from "./features/about/About";
 import Projects from "./features/projects/Projects";
@@ -11,6 +11,9 @@ function App() {
   const projectsNavLink = "projects";
   const experienceNavLink = "experience";
   const contactNavLink = "contact";
+
+  const [screenSize, setScreenSize] = useState({ width: window.innerWidth });
+
   const [lightDarkMode, setLightDarkMode] = useState(() => {
     if (
       window.matchMedia &&
@@ -21,6 +24,17 @@ function App() {
       return "light";
     }
   });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize({ width: window.innerWidth });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleLightDarkModeChange = (newValue) => {
     setLightDarkMode(newValue);
@@ -56,7 +70,11 @@ function App() {
         lightDarkMode={lightDarkMode}
       />
       <Experience lightDarkMode={lightDarkMode} />
-      <Footer id={contactNavLink} lightDarkMode={lightDarkMode} />
+      <Footer
+        id={contactNavLink}
+        lightDarkMode={lightDarkMode}
+        screenSize={screenSize}
+      />
     </div>
   );
 }
