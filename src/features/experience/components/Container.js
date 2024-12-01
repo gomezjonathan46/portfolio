@@ -41,8 +41,12 @@ export default function Container({
           <div
             className={`relative h-3 w-3 ${isOpen ? "rotate-45" : "rotate-0"} transition-all duration-500 ease-in-out`}
           >
-            <div className="absolute top-2/4 h-[1px] w-3 -translate-y-1/2 bg-black"></div>
-            <div className="absolute left-2/4 h-3 w-[1px] -translate-x-1/2 bg-black"></div>
+            <div
+              className={`absolute top-2/4 h-[1px] w-3 -translate-y-1/2 ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
+            ></div>
+            <div
+              className={`absolute left-2/4 h-3 w-[1px] -translate-x-1/2 ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
+            ></div>
           </div>
         </div>
       </div>
@@ -64,7 +68,9 @@ export default function Container({
           <div className="experience-container-details-custom-grid-item">
             <div className="mt-2 flex sm:mt-1">
               <div className="mr-3 flex items-center text-nowrap">
-                <LocationIcon />
+                <LocationIcon
+                  fill={lightDarkMode === "light" ? "#000" : "#fff"}
+                />
                 <p className="ml-1">{location}</p>
               </div>
               <a
@@ -73,7 +79,7 @@ export default function Container({
                 rel="noreferrer"
                 className="flex items-center"
               >
-                <LinkIcon />
+                <LinkIcon fill={lightDarkMode === "light" ? "#000" : "#fff"} />
                 <p className="ml-1">{url}</p>
               </a>
             </div>
@@ -96,14 +102,14 @@ export default function Container({
   );
 }
 
-const LocationIcon = (props) => (
+const LocationIcon = ({ fill }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     id="Capa_1"
-    width="8.329"
+    width="8.5"
     height="12"
-    fill="#000"
+    fill={fill}
     version="1.1"
     viewBox="0 0 4.12 5.936"
   >
@@ -116,19 +122,19 @@ const LocationIcon = (props) => (
   </svg>
 );
 
-const LinkIcon = (props) => (
+const LinkIcon = ({ fill }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg1"
     width="16"
-    height="11.633"
+    height="12"
     fill="none"
     version="1.1"
     viewBox="0 0 0.48 0.349"
   >
     <path
       id="path1"
-      stroke="#000"
+      stroke={fill}
       strokeLinecap="round"
       strokeWidth="0.046"
       d="M.174.305.16.317a.07.07 0 0 1-.07 0Q.082.31.06.289T.032.26a.07.07 0 0 1 0-.07.2.2 0 0 1 .028-.03L.125.092C.141.077.148.07.156.065a.07.07 0 0 1 .07 0C.234.07.24.077.256.093c.016.015.023.022.028.03a.07.07 0 0 1-.011.084M.207.142l-.01.014a.07.07 0 0 0 0 .07.2.2 0 0 0 .027.03c.015.016.022.023.03.028a.07.07 0 0 0 .07 0C.332.279.339.272.354.256L.42.191Q.442.17.448.16a.07.07 0 0 0 0-.07A.2.2 0 0 0 .42.06Q.4.038.39.032a.07.07 0 0 0-.084.012"
