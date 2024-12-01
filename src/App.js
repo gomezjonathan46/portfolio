@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className={`font-size-on-mobile ${lightDarkMode === 'light' ? 'bg-[#f9f7f0]' : 'bg-[#202124]'}`}>
+    <div className={`font-size-on-mobile ${lightDarkMode === 'light' ? 'bg-[#f9f7f0]' : 'bg-[#202124] text-white'}`}>
       <Nav
         aboutLink={aboutNavLink}
         projectsLink={projectsNavLink}
