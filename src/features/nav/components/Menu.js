@@ -36,7 +36,7 @@ export default function Menu({
 
   return (
     <div
-      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? (lightDarkMode === "light" ? "shadow-around-dark-mode bg-[#f9f7f0]" : "shadow-around-dark-mode bg-[#202124]") : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
+      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? (lightDarkMode === "light" ? "shadow-around bg-[#f9f7f0]" : "shadow-around bg-[#202124]") : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
     >
       <div
         className="float-right ml-auto hover:cursor-pointer md:hidden"

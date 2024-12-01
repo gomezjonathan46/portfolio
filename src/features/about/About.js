@@ -1,6 +1,8 @@
-export default function About() {
+export default function About({ lightDarkMode }) {
   return (
-    <div className="mx-[5%]">
+    <div
+      className={`mx-[5%] ${lightDarkMode === "light" ? "text-black" : "text-white"}`}
+    >
       <div className="right-border h-52 min-w-52 text-center sm:float-left sm:mr-5 sm:pr-5 md:h-56 md:w-56">
         <img
           className="mx-auto mb-[1.15rem] h-52 w-52 rounded-full shadow-xl md:mb-0 md:mr-[1.15rem]"

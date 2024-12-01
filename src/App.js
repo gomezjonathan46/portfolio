@@ -27,7 +27,9 @@ function App() {
   };
 
   return (
-    <div className={`font-size-on-mobile ${lightDarkMode === 'light' ? 'bg-[#f9f7f0]' : 'bg-[#202124] text-white'}`}>
+    <div
+      className={`font-size-on-mobile ${lightDarkMode === "light" ? "bg-[#f9f7f0]" : "bg-[#202124]"}`}
+    >
       <Nav
         aboutLink={aboutNavLink}
         projectsLink={projectsNavLink}
@@ -41,12 +43,20 @@ function App() {
         id={aboutNavLink}
         lightDarkMode={lightDarkMode}
       />
-      <About />
-      <Header text="Projects" id={projectsNavLink} lightDarkMode={lightDarkMode}/>
-      <Projects />
-      <Header text="Experience" id={experienceNavLink} lightDarkMode={lightDarkMode}/>
-      <Experience />
-      <Footer id={contactNavLink} />
+      <About lightDarkMode={lightDarkMode} />
+      <Header
+        text="Projects"
+        id={projectsNavLink}
+        lightDarkMode={lightDarkMode}
+      />
+      <Projects lightDarkMode={lightDarkMode} />
+      <Header
+        text="Experience"
+        id={experienceNavLink}
+        lightDarkMode={lightDarkMode}
+      />
+      <Experience lightDarkMode={lightDarkMode} />
+      <Footer id={contactNavLink} lightDarkMode={lightDarkMode} />
     </div>
   );
 }

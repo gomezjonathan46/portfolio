@@ -1,6 +1,6 @@
 import Container from "./components/Container";
 
-export default function Experience() {
+export default function Experience({ lightDarkMode }) {
   return (
     <>
       <Container
@@ -9,13 +9,12 @@ export default function Experience() {
         location={"Malvern, PA"}
         url={"vanguard.com"}
         href={"https://investor.vanguard.com/corporate-portal"}
-        description={
-          `Developed full-stack financial technology secure feature components using modern single page application
-          framework, Angular, and server-side nodejs.`
-        }
+        description={`Developed full-stack financial technology secure feature components using modern single page application
+          framework, Angular, and server-side nodejs.`}
         skillsArray={["Angular", "Node.js", "Typescript", "Git"]}
         company={"Vanguard"}
         logo={"vanguard.svg"}
+        lightDarkMode={lightDarkMode}
       />
       <Container
         title="Front-End Developer @ Brownstein Group"
@@ -27,6 +26,7 @@ export default function Experience() {
         skillsArray={["HTML", "CSS", "JavaScript", "PHP", "Git"]}
         company={"Brownstein Group"}
         logo={"BG.png"}
+        lightDarkMode={lightDarkMode}
       />
       <Container
         title="Client Services Analyst @ Hamilton Lane"
@@ -43,6 +43,7 @@ export default function Experience() {
         ]}
         company={"Hamilton Lane"}
         logo={"HL.svg"}
+        lightDarkMode={lightDarkMode}
       />
     </>
   );

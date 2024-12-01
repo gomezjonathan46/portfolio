@@ -10,6 +10,7 @@ export default function Container({
   skillsArray,
   logo,
   company,
+  lightDarkMode,
 }) {
   const ref = useRef(null);
   const [experienceDetailsHeight, setExperienceDetailsHeight] = useState(0);
@@ -29,8 +30,9 @@ export default function Container({
   return (
     <div className="mx-auto mb-2 w-[95%] max-w-[750px] rounded-md">
       {/* Title Bar */}
+      {/* #1310d9 */}
       <div
-        className="flex justify-between rounded-md bg-[#7fd1ae] px-4 py-3 hover:cursor-pointer"
+        className={`flex justify-between rounded-md ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} px-4 py-3 hover:cursor-pointer`}
         onClick={handleHeightChange}
       >
         <p>{title}</p>
@@ -47,7 +49,7 @@ export default function Container({
 
       {/* Position Details */}
       <div
-        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} mt-1 overflow-hidden rounded-md bg-[#7fd1ae]/50 px-4 transition-all duration-500 ease-in-out`}
+        className={`${isOpen ? "h-" + experienceDetailsHeight : "h-0"} mt-1 overflow-hidden rounded-md ${lightDarkMode === "light" ? "bg-[#7fd1ae]/50" : "bg-[#1310d9]/50 text-white"} px-4 transition-all duration-500 ease-in-out`}
         style={{
           height: isOpen ? `${experienceDetailsHeight}px` : "0px", // Dynamically set height
         }}
@@ -81,7 +83,7 @@ export default function Container({
               {skillsArray.map((skill, index) => (
                 <p
                   key={index}
-                  className="mb-2 mr-2 rounded-lg bg-[#f9f7f0] px-2 py-1"
+                  className={`mb-2 mr-2 rounded-lg ${lightDarkMode === "light" ? "bg-[#f9f7f0]" : "bg-[#202124]"} px-2 py-1`}
                 >
                   {skill}
                 </p>

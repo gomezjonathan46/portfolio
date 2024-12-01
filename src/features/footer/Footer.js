@@ -1,6 +1,6 @@
-export default function Footer({ id }) {
+export default function Footer({ id, lightDarkMode }) {
   return (
-    <div className="shadow-top mt-10 bg-[#7fd1ae]/50 pb-2 pt-3" id={id}>
+    <div className={`shadow-top mt-10 ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} pb-2 pt-3`} id={id}>
       <div className="mx-auto flex w-[95%] justify-between">
         <div className="flex flex-col">
           <a href="tel:+1-215-609-5952">(215) 609-5952</a>
