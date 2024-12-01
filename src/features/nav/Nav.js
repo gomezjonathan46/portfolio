@@ -24,6 +24,7 @@ export default function Nav({
           projectsLink={projectsLink}
           experienceLink={experienceLink}
           contactLink={contactLink}
+          lightDarkMode={lightDarkMode}
         />
       </div>
     </div>

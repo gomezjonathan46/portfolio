@@ -33,6 +33,10 @@ code {
   box-shadow: 0 -4px 6px -6px gray;
 }
 
+.shadow-around {
+  box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
 .project-custom-grid {
   display: grid;
   grid-template-columns: auto;

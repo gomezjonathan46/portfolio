@@ -5,6 +5,7 @@ export default function Menu({
   projectsLink,
   experienceLink,
   contactLink,
+  lightDarkMode,
 }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -35,7 +36,7 @@ export default function Menu({
 
   return (
     <div
-      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? "bg-white/100 shadow-sm" : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
+      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? (lightDarkMode === 'light' ? 'bg-[#f9f7f0] shadow-around' : 'bg-[#202124] shadow-around') : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
     >
       <div
         className="float-right ml-auto hover:cursor-pointer md:hidden"
