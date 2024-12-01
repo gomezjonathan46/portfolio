@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="shadow-top ">
-      <div className="mx-auto mb-2 mt-20 flex w-[95%] justify-between">
+    <div className="shadow-top mt-10 bg-[#7fd1ae]/50 pb-2 pt-3">
+      <div className="mx-auto flex w-[95%] justify-between">
         <div className="flex flex-col">
           <a href="tel:+1-215-609-5952">(215) 609-5952</a>
           <a href="mailto:gomez.e.jonathan@gmail.com">
@@ -12,11 +12,16 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/in/jonathangomeze/"
             target="_blank"
+            rel="noreferrer"
             className="mr-2"
           >
             <LinkedInIcon />
           </a>
-          <a href="https://github.com/gomezjonathan46" target="_blank">
+          <a
+            href="https://github.com/gomezjonathan46"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHubIcon />
           </a>
         </div>

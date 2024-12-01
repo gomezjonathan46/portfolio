@@ -29,9 +29,9 @@ code {
 }
 
 .shadow-top {
-  -moz-box-shadow: 0 4px 6px -6px gray;
-  -webkit-box-shadow: 0 4px 6px -6px gray;
-  box-shadow: 0 4px 6px -6px gray;
+  -moz-box-shadow: 0 -4px 6px -6px gray;
+  -webkit-box-shadow: 0 -4px 6px -6px gray;
+  box-shadow: 0 -4px 6px -6px gray;
 }
 
 .project-custom-grid {
