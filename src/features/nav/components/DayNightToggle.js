@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const Sun = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -84,25 +82,22 @@ const Moon = (props) => (
   </svg>
 );
 
-export default function DayNightToggle() {
+export default function DayNightToggle({ lightDarkMode, lightDarkModeChange }) {
   const light = "bg-[#f60]";
   const dark = "bg-[#18171e]";
-  const [background, setBackground] = useState(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      return dark;
-    } else {
-      return light;
-    }
-  });
+  let background = null;
+
+  if (lightDarkMode === "light") {
+    background = light;
+  } else {
+    background = dark;
+  }
 
   function handleClick() {
-    if (background === light) {
-      setBackground(dark);
+    if (lightDarkMode === "light") {
+      lightDarkModeChange("dark");
     } else {
-      setBackground(light);
+      lightDarkModeChange("light");
     }
   }
 

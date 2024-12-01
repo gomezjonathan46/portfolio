@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./features/nav/Nav";
 import About from "./features/about/About";
 import Projects from "./features/projects/Projects";
@@ -11,6 +11,20 @@ function App() {
   const projectsNavLink = "projects";
   const experienceNavLink = "experience";
   const contactNavLink = "contact";
+  const [lightDarkMode, setLightDarkMode] = useState(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      return "dark";
+    } else {
+      return "light";
+    }
+  });
+
+  const handleLightDarkModeChange = (newValue) => {
+    setLightDarkMode(newValue);
+  };
 
   return (
     <div className="font-size-on-mobile">
@@ -19,14 +33,16 @@ function App() {
         projectsLink={projectsNavLink}
         experienceLink={experienceNavLink}
         contactLink={contactNavLink}
+        lightDarkMode={lightDarkMode}
+        lightDarkModeChange={handleLightDarkModeChange}
       />
       <Header text="Hello, I'm Jonathan" id={aboutNavLink} />
       <About />
-      <Header text="Projects" id={projectsNavLink}/>
+      <Header text="Projects" id={projectsNavLink} />
       <Projects />
-      <Header text="Experience" id={experienceNavLink}/>
+      <Header text="Experience" id={experienceNavLink} />
       <Experience />
-      <Footer id={contactNavLink}/>
+      <Footer id={contactNavLink} />
     </div>
   );
 }
