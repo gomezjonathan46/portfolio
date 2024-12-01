@@ -36,11 +36,15 @@ function App() {
         lightDarkMode={lightDarkMode}
         lightDarkModeChange={handleLightDarkModeChange}
       />
-      <Header text="Hello, I'm Jonathan" id={aboutNavLink} />
+      <Header
+        text="Hello, I'm Jonathan"
+        id={aboutNavLink}
+        lightDarkMode={lightDarkMode}
+      />
       <About />
-      <Header text="Projects" id={projectsNavLink} />
+      <Header text="Projects" id={projectsNavLink} lightDarkMode={lightDarkMode}/>
       <Projects />
-      <Header text="Experience" id={experienceNavLink} />
+      <Header text="Experience" id={experienceNavLink} lightDarkMode={lightDarkMode}/>
       <Experience />
       <Footer id={contactNavLink} />
     </div>
