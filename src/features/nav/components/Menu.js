@@ -36,15 +36,21 @@ export default function Menu({
 
   return (
     <div
-      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? (lightDarkMode === 'light' ? 'bg-[#f9f7f0] shadow-around' : 'bg-[#202124] shadow-around') : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
+      className={`z-10 ml-auto flex flex-col rounded-sm ${isSmallScreen ? (menuOpen ? (lightDarkMode === "light" ? "shadow-around-dark-mode bg-[#f9f7f0]" : "shadow-around-dark-mode bg-[#202124]") : "bg-white/0") : "bg-white/0"} items-center p-3 transition-all duration-75`}
     >
       <div
         className="float-right ml-auto hover:cursor-pointer md:hidden"
         onClick={handleClick}
       >
-        <div className="h-[1px] w-[25px] bg-black"></div>
-        <div className="my-1 h-[1px] w-[20px] bg-black"></div>
-        <div className="h-[1px] w-[25px] bg-black"></div>
+        <div
+          className={`h-[1px] w-[25px] ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
+        ></div>
+        <div
+          className={`my-1 h-[1px] w-[20px] ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
+        ></div>
+        <div
+          className={`h-[1px] w-[25px] ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
+        ></div>
       </div>
       <ul
         className={`visible mt-3 flex flex-col transition-all duration-75 md:mt-0 md:flex-row md:pt-0 ${isSmallScreen ? (menuOpen ? "block opacity-100" : `${hiddenClassTimer} opacity-0`) : "block"}`}
