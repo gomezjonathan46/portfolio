@@ -130,16 +130,21 @@ function Project({ link, image, title, alt, lightDarkMode }) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      <a href={link} target="_blank" rel="noreferrer" className="block project-responsive-width">
-        <div className="relative h-48 project-responsive-width overflow-hidden">
-          <div
-            className={`absolute inset-0 rounded-t-md bg-black/25 ${isHovering ? "block" : "hidden"}`}
-          ></div>
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="project-responsive-width block"
+      >
+        <div className="project-responsive-width relative h-48 overflow-hidden">
           <img
             className="absolute min-h-full rounded-t-md"
             src={require(`./assets/${image}.jpg`)}
             alt={alt}
           />
+          <div
+            className={`absolute inset-0 rounded-t-md bg-black/25 ${isHovering ? "block" : "hidden"}`}
+          ></div>
         </div>
         <p className="ml-2 py-1">{title}</p>
       </a>
