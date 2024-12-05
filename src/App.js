@@ -44,8 +44,6 @@ function App() {
     setLightDarkMode(newValue);
   };
 
-  const handleScrollChange = (newValue) => setScroll(newValue);
-
   return (
     <div
       className={`font-size-on-mobile ${lightDarkMode === "light" ? "bg-[#f9f7f0]" : "bg-[#202124]"}`}
@@ -58,7 +56,6 @@ function App() {
         lightDarkMode={lightDarkMode}
         lightDarkModeChange={handleLightDarkModeChange}
         scroll={scroll}
-        scrollChange={handleScrollChange}
       />
       <Header
         text="Hello, I'm Jonathan"
