@@ -25,6 +25,8 @@ function App() {
     }
   });
 
+  const [scroll, setScroll] = useState(0);
+
   useEffect(() => {
     const handleResize = () => {
       setScreenSize({ width: window.innerWidth });
@@ -36,9 +38,13 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  window.addEventListener("scroll", () => setScroll(window.scrollY));
+
   const handleLightDarkModeChange = (newValue) => {
     setLightDarkMode(newValue);
   };
+
+  const handleScrollChange = (newValue) => setScroll(newValue);
 
   return (
     <div
@@ -51,6 +57,8 @@ function App() {
         contactLink={contactNavLink}
         lightDarkMode={lightDarkMode}
         lightDarkModeChange={handleLightDarkModeChange}
+        scroll={scroll}
+        scrollChange={handleScrollChange}
       />
       <Header
         text="Hello, I'm Jonathan"
