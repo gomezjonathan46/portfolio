@@ -30,16 +30,15 @@ export default function Container({
   return (
     <div className="mx-auto mb-2 w-[95%] max-w-[750px] rounded-md">
       {/* Title Bar */}
-      {/* #1310d9 */}
       <div
-        className={`flex justify-between rounded-md ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} px-4 py-3 hover:cursor-pointer`}
+        className={`flex items-center justify-between rounded-md ${lightDarkMode === "light" ? "bg-[#7fd1ae]" : "bg-[#1310d9] text-white"} px-4 py-3 hover:cursor-pointer`}
         onClick={handleHeightChange}
       >
         <p>{title}</p>
-        <div className="hidden items-center sm:flex">
-          <p className="mr-7">{date}</p>
+        <div className="items-center sm:flex">
+          <p className="mr-7 hidden sm:block">{date}</p>
           <div
-            className={`relative h-3 w-3 ${isOpen ? "rotate-45" : "rotate-0"} transition-all duration-500 ease-in-out`}
+            className={`h-3 w-3 ${isOpen ? "rotate-45" : "rotate-0"} transition-all duration-500 ease-in-out`}
           >
             <div
               className={`absolute top-2/4 h-[1px] w-3 -translate-y-1/2 ${lightDarkMode === "light" ? "bg-black" : "bg-white"}`}
